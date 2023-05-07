@@ -8,40 +8,40 @@ namespace WinFormsApp1.Model
 {
     internal class ADD
     {
-        public void AddStudent(Student student)
+        public static void AddStudent(Student student)
         {
              var Context=new ApplecationDbContext();
-             Context.Students.Add(student);
+             Context.Students!.Add(student);
              Context.SaveChanges();
         }
-        public void AddSubject(Subject subject)
+        public static void AddSubject(Subject subject)
         {
             var Context = new ApplecationDbContext();
-            Context.subjects.Add(subject);
+            Context.subjects!.Add(subject);
             Context.SaveChanges();
         }
-        public void AddSubjectLectur(SubjectLectur subjectLectur)
+        public static void AddSubjectLectur(SubjectLectur subjectLectur)
         {
             var Context = new ApplecationDbContext();
-            Context.subjectLecturs.Add(subjectLectur);
+            Context.subjectLecturs!.Add(subjectLectur);
             Context.SaveChanges();
         }
-        public void AddExams(Exam exam)
+        public static void AddExams(Exam exam)
         {
             var Context = new ApplecationDbContext();
-            Context.Exams.Add(exam);
+            Context.Exams!.Add(exam);
             Context.SaveChanges();
         }
-        public void AddDepartment(Department department)
+        public static void AddDepartment(Department department)
         {
             var Context = new ApplecationDbContext();
-            Context.Departments.Add(department);
+            Context.Departments!.Add(department);
             Context.SaveChanges();
         }
-        public void AddStudentMark(StudentMark studentMark)
+        public static void AddStudentMark(StudentMark studentMark)
         {
             var Context = new ApplecationDbContext();
-            Context.StudentsMarks.Add(studentMark);
+            Context.StudentsMarks!.Add(studentMark);
             Context.SaveChanges();
         }
     }

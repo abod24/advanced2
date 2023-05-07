@@ -8,7 +8,7 @@ namespace WinFormsApp1.Model
 {
     internal class Update
     {
-        public void UpdateStudent(Student student)
+        public static void UpdateStudent(Student student)
         {
             var context=new ApplecationDbContext();
             var newstudent = context.Students.Find(student.Id);
@@ -25,7 +25,7 @@ namespace WinFormsApp1.Model
             }
             
         }
-        public void UpdateSubject(Subject subject)
+        public static void UpdateSubject(Subject subject)
         {
             var context = new ApplecationDbContext();
             var newsubject = context.subjects.Find(subject.Id);
@@ -41,7 +41,7 @@ namespace WinFormsApp1.Model
             }
 
         }
-        public void UpdateSubjectLectur(SubjectLectur subjectLectur)
+        public static void UpdateSubjectLectur(SubjectLectur subjectLectur)
         {
             var context = new ApplecationDbContext();
             var newsubjectlectur = context.subjectLecturs.Find(subjectLectur.Id);
@@ -55,7 +55,7 @@ namespace WinFormsApp1.Model
             }
 
         }
-        public void UpdateDepartment(Department department)
+        public static void UpdateDepartment(Department department)
         {
             var context = new ApplecationDbContext();
             var newdepartment = context.Departments.Find(department.Id);
@@ -67,7 +67,7 @@ namespace WinFormsApp1.Model
             }
 
         }
-        public void UpdateExam(Exam exam)
+        public static void UpdateExam(Exam exam)
         {
             var context = new ApplecationDbContext();
             var newexam = context.Exams.Find(exam.Id);
@@ -81,7 +81,7 @@ namespace WinFormsApp1.Model
             }
 
         }
-        public void UpdateStudentMark(StudentMark studentMark)
+        public static void UpdateStudentMark(StudentMark studentMark)
         {
             var context = new ApplecationDbContext();
             var newmark = context.StudentsMarks.Find(studentMark.Id);

@@ -8,7 +8,7 @@ namespace WinFormsApp1.Model
 {
     internal class Delete
     {
-        public void DeleteStudent(Student student)
+        public static void DeleteStudent(Student student)
         {
             var context = new ApplecationDbContext();
             var target = context.Students.Find(student.Id);
@@ -18,7 +18,7 @@ namespace WinFormsApp1.Model
                 context.SaveChanges();
             }
         }
-        public void DeleteSubject(Subject subject)
+        public static void DeleteSubject(Subject subject)
         {
             var context =new ApplecationDbContext();
             var target = context.subjects.Find(subject.Id);
@@ -28,7 +28,7 @@ namespace WinFormsApp1.Model
                 context.SaveChanges();
             }
         }
-        public void DeleteSubjectLecture(SubjectLectur subjectLectur)
+        public static void DeleteSubjectLecture(SubjectLectur subjectLectur)
         {
             var context = new ApplecationDbContext();
             var target = context.subjectLecturs.Find(subjectLectur.Id);
@@ -38,7 +38,7 @@ namespace WinFormsApp1.Model
                 context.SaveChanges();
             }
         }
-        public void DeleteDepartment(Department department)
+        public static void DeleteDepartment(Department department)
         {
             var context = new ApplecationDbContext();
             var target = context.Departments.Find(department.Id);
@@ -48,7 +48,7 @@ namespace WinFormsApp1.Model
                 context.SaveChanges();
             }
         }
-        public void DeleteExam(Exam exam)
+        public static void DeleteExam(Exam exam)
         {
             var context = new ApplecationDbContext();
             var target = context.Exams.Find(exam.Id);
@@ -58,7 +58,7 @@ namespace WinFormsApp1.Model
                 context.SaveChanges();
             }
         }
-        public void DeleteMark(StudentMark studentMark)
+        public static void DeleteMark(StudentMark studentMark)
         {
             var context = new ApplecationDbContext();
             var target = context.StudentsMarks.Find(studentMark.Id);
